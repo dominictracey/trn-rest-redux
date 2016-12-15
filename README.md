@@ -14,14 +14,19 @@ For use cases where you have data available in a REST server that you would like
     - Promise-based api call lifecycle
     - Provide any new object schemas necessary for normalizr
   - Integrated with [redux devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
-  -
+
 
 # Getting Started
 
-Add to .meteor/packages:
+Put this package in your Telescope packages folder
+
+Install [meteor-fetch](https://github.com/timbrandin/meteor-fetch) to support server side fetch.
+
+Add both to .meteor/packages:
 ```
 ############ Your Packages ############
 trn:rest-redux
+timbrandin:fetch
 ```
 
 Replace nova-base-components/lib/common/App.jsx to use redux
