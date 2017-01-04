@@ -1,6 +1,6 @@
 Package.describe({
   name: "trn:rest-redux",
-  version: "0.1.0",
+  version: "0.1.1",
 });
 
 Package.onUse( function(api) {
@@ -8,9 +8,8 @@ Package.onUse( function(api) {
   api.versionsFrom("METEOR@1.0");
 
   api.use([
-    'nova:core',
+    'nova:core@1.0.0',
   ]);
 
-  api.mainModule("lib/server.js", "server");
-  api.mainModule("lib/client.js", "client");
+  api.mainModule("lib/modules.js", ["client", "server"]);
 });
