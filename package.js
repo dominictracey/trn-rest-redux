@@ -1,6 +1,6 @@
 Package.describe({
   name: "trn:rest-redux",
-  version: "0.3.1",
+  version: "1.0.0",
 });
 
 Package.onUse( function(api) {
