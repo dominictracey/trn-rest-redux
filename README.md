@@ -93,8 +93,7 @@ These entities are flattened and placed in redux store when the REST call comple
 
 ```
 const mapStateToProps = state => {
-  const { entities } = state
-  const { config } = entities
+  const { entities: {config} } = state
 
   return {
     config,
